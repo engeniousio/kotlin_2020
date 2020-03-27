@@ -76,6 +76,11 @@ fun main() {
 
     val sumOfIntegers = sum(10, -50)
     println("Sum of two integers is $sumOfIntegers")
+
+    println("======SESSION 2 ===========")
+    testArrays()
+    println("=======CLASSES========")
+    testClasses()
 }
 
 fun myFirstFunction() {
@@ -95,4 +100,55 @@ fun greet(name: String, age: Int): String {
 
 fun sum(firstInteger: Int, secondInteger: Int): Int {
     return firstInteger + secondInteger
+}
+
+fun testArrays() {
+
+    val numbers: IntArray = intArrayOf(7, -10, 5, 24, 33, 19)
+
+    println(numbers[3])
+    println(numbers.size)
+    println(numbers[numbers.size - 1])
+    println(numbers.lastIndex)
+
+    println("================")
+
+    for (i in numbers) {
+        println(i)
+    }
+
+    println("------------")
+
+    println(sumArray(numbers))
+
+    val namesAndAges = mapOf("John" to 30, "Ben" to 25, "Igor" to 32)
+
+    println(namesAndAges["John"])
+
+}
+
+// write a function that takes an array of integers as an argument and returns the sum of all elements
+
+fun sumArray(numbers: IntArray): Int {
+
+    var sum: Int = 0
+
+    for (i in numbers) {
+        sum = sum + i
+    }
+    return sum
+}
+
+fun testClasses() {
+    val audiCar = Car(4.6,"black", 2020, "audi")
+    var lambo = Car(6.4,"yellow", 2019, "lamborghini")
+
+    audiCar.beep()
+
+    lambo.accelerate(5)
+    lambo.accelerate(15)
+    lambo.decelerate(25)
+    println("Lambo speed: ${lambo.speed}")
+
+//    audiCar.speed = 300   ---  Error
 }
