@@ -8,6 +8,19 @@ class StudentMaui(
 ) {
     private var isPassed: Boolean? = null
 
+    fun passed() {
+        isPassed = true
+    }
+    fun failed() {
+        isPassed = false
+    }
+    fun printStats() {
+        println(" Student name: $name course: $course degree: $degree year: $yearAttending passed: $isPassed")
+    }
+    fun changeYearAttending(year: Int) {
+        yearAttending = year
+    }
+
 }
 
 
