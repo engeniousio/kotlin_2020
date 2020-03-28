@@ -16,8 +16,9 @@ class Car(engineVolume: Double,
 
     fun accelerate(delta: Int) {
         super.beep()
-        speed *= delta
+        speed += delta
         print("This is real acceleration now!")
+//        speed = delta
     }
 
     fun decelerate(delta: Int) {
