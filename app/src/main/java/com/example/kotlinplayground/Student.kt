@@ -2,17 +2,9 @@ package com.example.kotlinplayground
 
 
 class Student (
-               name: String,
-               startingYear: Int,
-               nameOfTheSchool: String,
-               avgGrage: Double) {
-
-
-
-    var drinkBeer: Boolean = true
-        private set
-
-
-
+              private val name: String,
+              private var startingYear: Int,
+              private val nameOfTheSchool: String,
+              private var avgGrage: Double) {
 
 }
