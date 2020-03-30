@@ -3,11 +3,11 @@ package com.example.kotlinplayground
 import kotlin.random.Random
 
 class StudentNameSantorini() {
-    val numberOfStudentsInGroup: Int = 100
-    var yearMathExam: Boolean = false
-    var yearChemistryExam: Boolean = false
-    var yearLinguisticsExam: Boolean = false
-    var randomInt = Random.nextInt(0,1)
+    private val numberOfStudentsInGroup: Int = 100
+    private var yearMathExam: Boolean = false
+    private var yearChemistryExam: Boolean = false
+    private var yearLinguisticsExam: Boolean = false
+    private var randomInt = Random.nextInt(0,1)
     
 
     fun exam(): Boolean {
