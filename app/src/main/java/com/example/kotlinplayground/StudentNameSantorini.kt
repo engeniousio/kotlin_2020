@@ -2,31 +2,31 @@ package com.example.kotlinplayground
 
 import kotlin.random.Random
 
-class StudentNameSantorini() {
-    private val numberOfStudentsInGroup: Int = 100
-    private var yearMathExam: Boolean = false
-    private var yearChemistryExam: Boolean = false
-    private var yearLinguisticsExam: Boolean = false
-    private var randomInt = Random.nextInt(0,1)
+class StudentNameSantorini(
+    private val numberOfStudentsInGroup: Int = 100,
+            private var yearMathExam: Boolean = false,
+            private var yearChemistryExam: Boolean = false,
+            private var yearLinguisticsExam: Boolean = false) {
+
     
 
     fun exam(): Boolean {
         // if randomInt 0 - exam failed, id randomInt is >0 exam passed
-        randomInt = Random.nextInt(0,15)
+        var randomInt = (0..15).random()
         if (randomInt==0) {
             yearMathExam = false
         } else {
             yearMathExam = true
         }
         
-        randomInt = Random.nextInt(0,14)
+        randomInt = (0..14).random()
         if (randomInt==0) {
             yearChemistryExam = false
         } else {
             yearChemistryExam = true
         }
 
-        randomInt = Random.nextInt(0,16)
+        randomInt = (0..16).random()
         if (randomInt==0) {
             yearLinguisticsExam = false
         } else {
