@@ -7,7 +7,7 @@ class StudentNameSantorini(
             private var linguisticsNumber: Int) {
 
     fun averageNumber () :Double {
-        val averageNumber: Double = ((mathNumber + linguisticsNumber + chemistryNumber)/3).toDouble()
+        val averageNumber = (mathNumber.toDouble() + linguisticsNumber.toDouble() + chemistryNumber.toDouble())/3
         return averageNumber
     }
 
