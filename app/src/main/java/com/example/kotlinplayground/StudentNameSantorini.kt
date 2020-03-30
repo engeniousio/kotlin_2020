@@ -1,7 +1,5 @@
 package com.example.kotlinplayground
 
-import kotlin.random.Random
-
 class StudentNameSantorini(
             private val nameOfStudent: String,
             private var mathNumber: Int,
