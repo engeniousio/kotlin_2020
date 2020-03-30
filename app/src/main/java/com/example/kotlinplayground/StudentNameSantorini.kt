@@ -2,7 +2,8 @@ package com.example.kotlinplayground
 
 import kotlin.random.Random
 
-class StudentNameSantorini(numberOfStudentsInGroup: Int = 100) {
+class StudentNameSantorini() {
+    val numberOfStudentsInGroup: Int = 100
     var yearMathExam: Boolean = false
     var yearChemistryExam: Boolean = false
     var yearLinguisticsExam: Boolean = false
@@ -37,7 +38,7 @@ class StudentNameSantorini(numberOfStudentsInGroup: Int = 100) {
         } else {return false}
     }
 
-    fun groupeTakesExam(numberOfStudentsInGroup: Int): Int  {
+    fun groupeTakesExam(): Int  {
 
         var numberStudents = numberOfStudentsInGroup
         var numberOfStudentsPassedExam = 0

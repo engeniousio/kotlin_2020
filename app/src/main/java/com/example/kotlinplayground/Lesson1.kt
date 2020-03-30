@@ -81,8 +81,6 @@ fun main() {
     testArrays()
     println("=======CLASSES========")
     testClasses()
-    println("=======STUDENTS========")
-    testStudentExam()
 }
 
 fun myFirstFunction() {
@@ -153,14 +151,4 @@ fun testClasses() {
     println("Lambo speed: ${lambo.speed}")
 
 //    audiCar.speed = 300   ---  Error
-
-    println("----- END CAR ------")
-}
-
-fun testStudentExam() {
-    val groupe: StudentNameSantorini = StudentNameSantorini(111)
-
-    var howManyStudentsPassedExam: Int = groupe.groupeTakesExam(77)
-    println(howManyStudentsPassedExam)
-
 }
