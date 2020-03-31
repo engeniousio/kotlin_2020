@@ -28,7 +28,7 @@ class Student(
         speed -= delta
     }
     override fun study(){
-        println("Student Madagaskar is working on the git submit")
+        println("Student Madagaskar is working on the git submi")
     }
 }
 
