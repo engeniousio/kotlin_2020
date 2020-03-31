@@ -1,23 +1,16 @@
 package com.example.kotlinplayground
 
-open class StudentMadagascar(var lastName: String, var course: Int, var yearTaking: Int) {
-    open fun study() {
-        println("PROGRAMMING!!!!")
-    }
-}
 
 class Students(
-    lastName: String,
-    course: Int,
-    yearTaking: Int,
-    var firstName: String, var kotlinStudy: Boolean = true
-) : StudentMadagascar(lastName, course, yearTaking) {
+    var lastName: String,
+    var course: Int,
+    var yearTaking: Int,
+    var firstName: String, var kotlinStudy: Boolean = true) {
 
     var speed: Int = 0
         private set
 
     fun gitSubmit(delta: Int) {
-        super.study()
         speed += delta
         print("This is real work now Madagascar student!")
     }
@@ -30,7 +23,7 @@ class Students(
         speed -= delta
     }
 
-    override fun study() {
+     fun study() {
         println("Student Madagascar is working on the git submit")
     }
 
